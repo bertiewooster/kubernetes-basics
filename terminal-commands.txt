@@ -12,3 +12,12 @@ kubectl cluster-info
 
 # view the nodes in the cluster
 kubectl get nodes
+
+# Deploy app:
+#   searched for a suitable node where an instance of the application could be run (we have only 1 available node)
+#   scheduled the application to run on that Node
+#   configured the cluster to reschedule the instance on a new Node when needed
+kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+
+# List deployments
+kubectl get deployments
