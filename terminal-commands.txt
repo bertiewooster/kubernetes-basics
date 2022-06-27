@@ -6,3 +6,9 @@ minikube start
 
 # Check if kubectl is installed by getting version
 kubectl version
+
+# View cluster details
+kubectl cluster-info
+
+# view the nodes in the cluster
+kubectl get nodes
