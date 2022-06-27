@@ -1,0 +1,11 @@
+# Initialize terraform project
+terraform init
+
+# Provision the NGINX server container
+terraform apply
+
+# View the NGINX container running in Docker via terraform
+docker ps
+
+# Stop container and destroy resources
+terraform destroy
