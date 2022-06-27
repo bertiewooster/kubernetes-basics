@@ -3,3 +3,6 @@ minikube version
 
 # Start the cluster--boot up control plane
 minikube start
+
+# Check if kubectl is installed by getting version
+kubectl version
