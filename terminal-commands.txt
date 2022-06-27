@@ -1,11 +1,5 @@
-# Initialize terraform project
-terraform init
+# Check that minikube was installed properly, by getting version
+minikube version
 
-# Provision the NGINX server container
-terraform apply
-
-# View the NGINX container running in Docker via terraform
-docker ps
-
-# Stop container and destroy resources
-terraform destroy
+# Start the cluster--boot up control plane
+minikube start
